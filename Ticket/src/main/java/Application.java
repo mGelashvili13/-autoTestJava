@@ -20,9 +20,11 @@ public class Application {
             System.out.println("Введите номер операции: ");
             int num = in.nextInt();
             System.out.printf("Вы ввели: %d \n", num);
+            if (num==0){
+                break;
+            }
 
             switch (num) {
-
                 case 1:
                     System.out.println("создать пользователя");
                     User someUser = new User(1, "Will Jones", "34324234");
