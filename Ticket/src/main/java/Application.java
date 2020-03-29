@@ -3,7 +3,7 @@ import model.Event;
 import model.Ticket;
 import model.User;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Application {
 
@@ -13,13 +13,12 @@ public class Application {
 
     public static void main(String[] args) {
         System.out.println("Hello world");
-
-
         Scanner in = new Scanner(System.in);
 
         while (true) {
             System.out.println("Введите номер операции: ");
             int num = in.nextInt();
+           // String nnameUser = in.next();
             System.out.printf("Вы ввели: %d \n", num);
             if (num == Command.Exit.id){
                 break;
@@ -29,6 +28,7 @@ public class Application {
 //            Command[] cmds = {Command.Exit, Command.CreateEvent...};
 
             User[] users = {
+
                     new User(0, "Vasia", "553"),
                     new User(1, "Vova", "555")};
 
