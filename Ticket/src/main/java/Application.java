@@ -18,14 +18,12 @@ public class Application {
         while (true) {
             System.out.println("Введите номер операции: ");
             int num = in.nextInt();
-           // String nnameUser = in.next();
             System.out.printf("Вы ввели: %d \n", num);
             if (num == Command.Exit.id){
                 break;
             }
 
-//            Command cmd = null;//Command.values();
-//            Command[] cmds = {Command.Exit, Command.CreateEvent...};
+//
 
             User[] users = {
 
